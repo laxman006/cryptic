@@ -1,0 +1,23 @@
+{
+  "name": "cryptic",
+  "version": "1.0.0",
+  "description": "A cryptic application that handles API requests and provides utility functions.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "cryptic",
+    "api",
+    "utilities"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
