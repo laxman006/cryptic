@@ -1,13 +1,14 @@
 # Cryptic Project
 
 ## Overview
-Cryptic is a JavaScript application designed to provide a seamless experience for users. It utilizes modern JavaScript features and libraries to enhance functionality and performance.
 
 Decryption Process:
+
 Each character of the ciphertext was decrypted using the corresponding character of the key.
 The decrypted text HELLO matches the expected output.
 
 Mock API:
+
 The /encrypt endpoint returned the mock data (key: 'KEY', encrypted_text: 'RIJVS').
 The /verify endpoint successfully logged the payload and returned a mock success message.
 
