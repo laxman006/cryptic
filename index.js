@@ -1,5 +1,20 @@
 const { decryptText } = require('./src/decrypt');
 
+// Mock API object
+const api = {
+    get: async (endpoint) => {
+        if (endpoint === '/encrypt') {
+            return { key: 'KEY', encrypted_text: 'RIJVS' };
+        }
+    },
+    post: async (endpoint, payload) => {
+        if (endpoint === '/verify') {
+            console.log('Payload sent to /verify:', payload);
+            return { message: 'Verification successful!' }; 
+        }
+    }
+};
+
 async function main() {
     try {
         const { key, encrypted_text } = await api.get('/encrypt');
@@ -20,6 +35,5 @@ async function main() {
         console.error('Error:', error.message);
     }
 }
-console.log('decryptText:', decryptText); 
 
 main();
